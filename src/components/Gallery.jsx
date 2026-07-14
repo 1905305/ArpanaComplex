@@ -9,7 +9,7 @@ export default function Gallery() {
           Inside the complex
         </Reveal>
         <Reveal as="h2" className="section-title">
-          Wide corridors.
+          Wide corridor.
           <br />
           Finished, not fitted-out.
         </Reveal>

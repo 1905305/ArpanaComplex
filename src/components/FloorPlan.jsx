@@ -57,7 +57,7 @@ export default function FloorPlan({ onEnquire }) {
         <Reveal as="h2" className="section-title">
           One entrance.
           <br />
-          Two corridors.
+          One corridor.
           <br />
           Seven shops.
         </Reveal>
