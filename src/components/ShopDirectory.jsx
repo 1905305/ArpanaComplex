@@ -6,7 +6,15 @@ export default function ShopDirectory({ onEnquire }) {
 
   // Function to determine if a shop is booked
   const isBooked = (shopNumber) => {
-    return shopNumber === 1 || shopNumber === 2;
+    return (
+      shopNumber === 1 ||
+      shopNumber === 2 ||
+      shopNumber === 3 ||
+      shopNumber === 4 ||
+      shopNumber === 5 ||
+      shopNumber === 6 ||
+      shopNumber === 7
+    );
   };
 
   return (
