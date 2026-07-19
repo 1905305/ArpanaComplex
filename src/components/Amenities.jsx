@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const ITEMS = [
   {
     title: "Washroom on site",
-    body: "A dedicated washroom serves the complex, so staff  are covered without sending anyone off-premises.",
+    body: "A dedicated washroom serves the complex, so staff are covered without sending anyone off-premises.",
     icon: (
       <>
         <path d="M6 21V9a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v12" />
@@ -14,7 +14,7 @@ const ITEMS = [
   },
   {
     title: "Open parking space",
-    body: "Forecourt parking in front of the complex, for customers who drive and vendors who need to load and unload.",
+    body: "Forecourt parking in front of the complex for customers who drive and vendors who need to load and unload.",
     icon: (
       <>
         <rect x="3" y="7" width="18" height="12" rx="1.5" />
@@ -25,7 +25,7 @@ const ITEMS = [
   },
   {
     title: "Roller shutter security",
-    body: "Every unit closes behind its own steel shutter — lock up and leave, no separate grille to fit.",
+    body: "Every unit closes behind its own steel shutter—lock up and leave with no separate grille to fit.",
     icon: (
       <>
         <rect x="3" y="4" width="18" height="16" rx="1" />
@@ -55,7 +55,7 @@ const ITEMS = [
   },
   {
     title: "Ground-floor frontage",
-    body: "Every shop opens directly onto the forecourt — no stairs, no shared lobby, straight visibility from the road.",
+    body: "Every shop opens directly onto the forecourt—no stairs, no shared lobby, straight visibility from the road.",
     icon: (
       <>
         <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
@@ -71,21 +71,30 @@ export default function Amenities() {
         <Reveal as="p" className="eyebrow">
           Built in, not promised
         </Reveal>
+
         <Reveal as="h2" className="section-title">
           What comes with
           <br />
           every shop.
         </Reveal>
+
         <Reveal as="p" className="section-lede">
-          Three things every shopkeeper asks about first — sorted before you even walk in.
+          Everything that's already built into every shop.
         </Reveal>
 
         <Reveal as="div" className="amen-grid">
           {ITEMS.map((item) => (
             <div className="amen-card" key={item.title}>
-              <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+              <svg
+                className="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.6}
+              >
                 {item.icon}
               </svg>
+
               <h4>{item.title}</h4>
               <p>{item.body}</p>
             </div>
