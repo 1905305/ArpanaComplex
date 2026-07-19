@@ -9,11 +9,7 @@ export default function ShopDirectory({ onEnquire }) {
     return (
       shopNumber === 1 ||
       shopNumber === 2 ||
-      shopNumber === 3 ||
-      shopNumber === 4 ||
-      shopNumber === 5 ||
-      shopNumber === 6 ||
-      shopNumber === 7
+     
     );
   };
 
