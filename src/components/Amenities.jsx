@@ -10,7 +10,7 @@ const ITEMS = [
         <path d="M9 21v-6h6v6" />
         <circle cx="16" cy="9" r="1" />
       </>
-    )
+    ),
   },
   {
     title: "Open parking space",
@@ -25,7 +25,7 @@ const ITEMS = [
   },
   {
     title: "Roller shutter security",
-    body: "Every unit closes behind its own steel shutter—lock up and leave with no separate grille to fit.",
+    body: "Every unit closes behind its own steel shutter, allowing you to lock up and leave safely.",
     icon: (
       <>
         <rect x="3" y="4" width="18" height="16" rx="1" />
@@ -35,7 +35,7 @@ const ITEMS = [
   },
   {
     title: "Wide shared corridor",
-    body: "A generous internal walkway links all seven units, wide enough for customers to browse both sides comfortably.",
+    body: "A spacious internal walkway connects all seven units, allowing customers to browse comfortably.",
     icon: (
       <>
         <path d="M4 10h16v9H4z" />
@@ -45,7 +45,7 @@ const ITEMS = [
   },
   {
     title: "Recessed lighting",
-    body: "Fitted ceiling lighting runs the length of the corridor and into each shop shell, ready before you add your own signage.",
+    body: "Ceiling lighting runs through the corridor and shop spaces, ready for your business setup.",
     icon: (
       <>
         <circle cx="12" cy="12" r="4" />
@@ -55,7 +55,7 @@ const ITEMS = [
   },
   {
     title: "Ground-floor frontage",
-    body: "Every shop opens directly onto the forecourt—no stairs, no shared lobby, straight visibility from the road.",
+    body: "Every shop opens directly onto the forecourt with clear visibility from the road.",
     icon: (
       <>
         <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
@@ -68,6 +68,7 @@ export default function Amenities() {
   return (
     <section className="amenities section-pad" id="amenities">
       <div className="wrap">
+
         <Reveal as="p" className="eyebrow">
           Built in, not promised
         </Reveal>
@@ -79,27 +80,31 @@ export default function Amenities() {
         </Reveal>
 
         <Reveal as="p" className="section-lede">
-          Everything that's already built into every shop.
+          Everything that is already built into every shop.
         </Reveal>
 
         <Reveal as="div" className="amen-grid">
           {ITEMS.map((item) => (
             <div className="amen-card" key={item.title}>
+
               <svg
                 className="icon"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth={1.6}
+                strokeWidth="1.6"
               >
                 {item.icon}
               </svg>
 
               <h4>{item.title}</h4>
+
               <p>{item.body}</p>
+
             </div>
           ))}
         </Reveal>
+
       </div>
     </section>
   );
