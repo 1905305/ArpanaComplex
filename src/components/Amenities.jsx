@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const ITEMS = [
   {
     title: "Washroom on site",
-    body: "A dedicated washroom serves the complex, so staff and customers are covered without sending anyone off-premises.",
+    body: "A dedicated washroom serves the complex, so staff  are covered without sending anyone off-premises.",
     icon: (
       <>
         <path d="M6 21V9a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v12" />
