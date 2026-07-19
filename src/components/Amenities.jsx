@@ -10,7 +10,7 @@ const ITEMS = [
         <path d="M9 21v-6h6v6" />
         <circle cx="16" cy="9" r="1" />
       </>
-    ),
+    )
   },
   {
     title: "Open parking space",
