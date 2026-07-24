@@ -6,7 +6,7 @@ export default function ShopDirectory({ onEnquire }) {
 
   // Function to determine if a shop is booked
   const isBooked = (shopNumber) => {
-    return shopNumber === 1 || shopNumber === 2;
+   
   };
 
   return (
